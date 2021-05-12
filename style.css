@@ -73,7 +73,7 @@ html {
     background-color: whitesmoke;
 }
 #main > section {
-    border-top: solid 2px #efefef;
+    border-top: solid 4px #efefef;
     margin: 0em 0 0 0;
     padding: 4em 4em 0 2em;
 }
@@ -82,6 +82,13 @@ html {
         border-top: 0;
         margin-top: 0;
         padding-top: 0;
+    }
+
+    @media screen and (max-device-width : 768px) { 
+        #main > section {
+            border-top: solid 2px #efefef;
+            padding: 4em 2em 0 2em;
+        }
     }
 /* One */
     #one h2 {
@@ -248,7 +255,7 @@ html {
     text-align: justify;
     color: #655566;
     font-size: 20px;
-    padding: 10px 0px 20px 20px;
+    padding: 10px 200px 20px 20px;
 }
 #four .row {
     margin-left: 200px;
@@ -260,9 +267,8 @@ html {
 }
 .image:hover {filter: opacity(.5);}
 
-.boton{
-    margin-left: 230px;
-    padding-bottom: 40px;
+.boton1{
+    margin-bottom: 40px;
 }
 
 .proj {display: flex;
@@ -290,11 +296,13 @@ html {
 
 @media screen and (max-device-width : 768px) { 
     #four .row {
-        margin-left: 0px;
+        margin: 0px;
+
     }
+
     .work-item .image {
-        width: 250px;
-        height: 150px;
+        width: 120px;
+        height: 100px;
         border: #381944 solid 5px;
     }
     #four h2{
@@ -303,19 +311,24 @@ html {
     
     #four h3{
         font-size: 20px;
+        padding-left: 10px;
     }
     #four h4{
         font-size: 15px;
+        padding-left: 5px;
+        
     }
     #four p {
         font-size: 10px;
+        padding-left: 5px;
+        padding: 10px 2px 20px 5px;
     }
 
     #four .card {
-        height: 190px;
-        width: 35rem;
-        margin-left: 20px;
-        margin-right: 20px;}
+        height: 210px;
+        width: 200px;
+        margin-left: 5px;
+        margin-right: 5px;}
     
     .imcard {
         width:100%;
@@ -326,7 +339,16 @@ html {
     
     .boton {
         margin-left: 0px;
+        size: 20px;
     }
+
+    #four .card-text{
+        font-size: 8px;
+    }
+    .boton1{
+        margin-left: 60px;
+    }
+
 }
 
 /* Five */
@@ -361,6 +383,9 @@ html {
     #five p {
         font-size: 15px;
         padding: 10px 0px 20px 20px;
+    }
+    .boton2{
+        margin-left: 60px;
     }
 
 }
