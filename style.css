@@ -127,19 +127,19 @@ html {
     font-weight: bold;
 }
 #two .img{
-    width: 100%;
+    width: 200px;
 }
-#two .card{
-    padding: 10px;}
 
     .card1{
-       margin-left: 200px;}
+       margin-left: 400px;}
 
     .card2{
-       margin-left: 400px;}
+       margin-left: 600px;
+       padding-top: 60px;}
     
     .card3{
-       margin-left: 600px;}
+       margin-left: 800px;
+       padding: 60px 0px 60px 0px;}
 
 @media screen and (max-device-width : 768px) { 
     #two h2{
@@ -155,23 +155,19 @@ html {
         
     }
     #two .img{
-        width: 30%;
+        width: 80px;
     }
-    #two .card{
-        padding: 10px;}
     
         .card1{
-           margin-left: 80px;}
+           margin-left: 20px;}
     
         .card2{
-           margin-left: 80px;}
+           margin-left: 20px;}
         
         .card3{
-           margin-left: 80px;}
+           margin-left: 20px;}
 }
-
 /* Three */
-
 #three h2{
     color: #381944;
     font-family: 'Shadows Into Light', cursive;
@@ -181,15 +177,190 @@ html {
 
 #three h3{
     color: #381944;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#three h4{
+    color: #381944;
+    font-size: 30px;
+}
+#three p {
+    text-align: justify;
+    color: #655566;
+    font-size: 20px;
+}
+
+#three .exp{
+    padding: 40px 0px 40px 300px;
+}
+
+.ing {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-device-width : 768px) { 
+    #three h2{
+        font-size: 30px;
+    }
+    
+    #three h3{
+        font-size: 15px;
+    }
+    
+    #three h4{
+        font-size: 15px;
+    }
+
+    #three p {
+        font-size: 10px;
+    }
+
+    #three .exp{
+        padding: 40px 0px 40px 40px;
+    }
+}
+
+
+/* Four */
+
+#four h2{
+    color: #381944;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#four h3{
+    color: #381944;
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
     font-size: 40px;
     padding: 20px 0px 20px 40px;
 }
-
-#three p {
-    text-align: justify;
-    line-height: 1.5em;
-    color: #655566;
+#four h4{
+    color: #381944;
+    font-weight: bold;
     font-size: 30px;
+    padding: 20px 0px 0px 20px;
+}
+#four p {
+    text-align: justify;
+    color: #655566;
+    font-size: 20px;
+    padding: 10px 0px 20px 20px;
+}
+#four .row {
+    margin-left: 200px;
+}
+.work-item .image {
+    width: 600px;
+    height: 380px;
+    border: #381944 solid 5px;
+}
+.image:hover {filter: opacity(.5);}
+
+.boton{
+    margin-left: 230px;
+    padding-bottom: 40px;
+}
+
+.proj {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 20px 50px 20px;}
+
+#four .card {
+    height: 400px;
+    width: 35rem;
+    margin-left: 20px;
+    margin-right: 20px;}
+
+#four .card-text{
+    color:#381944;
+    padding: 10px 5px 0px 5px;
+    text-decoration: none;
+    
+}
+
+.imcard {width:100%;
+    height:300px}
+
+.imcard:hover {filter: opacity(.5);}
+
+@media screen and (max-device-width : 768px) { 
+    #four .row {
+        margin-left: 0px;
+    }
+    .work-item .image {
+        width: 250px;
+        height: 150px;
+        border: #381944 solid 5px;
+    }
+    #four h2{
+        font-size: 30px;
+    }
+    
+    #four h3{
+        font-size: 20px;
+    }
+    #four h4{
+        font-size: 15px;
+    }
+    #four p {
+        font-size: 10px;
+    }
+
+    #four .card {
+        height: 190px;
+        width: 35rem;
+        margin-left: 20px;
+        margin-right: 20px;}
+    
+    .imcard {
+        width:100%;
+        height:100px}
+    
+    .proj {
+        padding: 0px 20px 20px 20px;}
+    
+    .boton {
+        margin-left: 0px;
+    }
+}
+
+/* Five */
+
+#five h2{
+    color: #381944;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#five p {
+    text-align: justify;
+    color: #541058;
+    font-size: 20px;
+    padding: 10px 0px 20px 20px;
+}
+
+.center {
+    padding: 50px 100px 50px 100px;
+    border:#c1bac2 10px solid;
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-device-width : 768px) { 
+    #five h2{
+        font-size: 30px;
+    }
+    
+    #five p {
+        font-size: 15px;
+        padding: 10px 0px 20px 20px;
+    }
+
 }
