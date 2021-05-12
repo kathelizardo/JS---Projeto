@@ -12,146 +12,184 @@ html {
     box-sizing: border-box;
 }
 
-body{
-    line-height: 1;
-}
-
-footer, header, menu, nav, section {
-	display: block;}
-
-
-/* Container */
-
-/*Lado izquierdo*/
-
-.izquierdo {
-    background-image: url("img/fondo.png");
-    background-position: center center;
-    background-repeat: repeat;
-    background-size: cover;
-    height:100%;
-    left: 0;
-	padding: 15em 4em;
-	position: fixed;
-	text-align: right;
-	top: 0;
-    max-width: calc(100% - 4em)
-    }
-
-.present{
-    margin-right: 5rem;
-}
-.present h1 {
+/* HEADER */
+.titulo{
     font-family: 'Rock Salt', cursive;
-    font-weight: bold;
-    font-size: 40px;
 }
-.present h3 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-}
-
-.redes {
-    margin-top: 40px;
-    width: 100%;
-    height: 100px;
-}
-.icons {
-    margin-right: 5rem; 
-}
-
-.icons li {
-        text-decoration: none;
-        list-style: none;
-        display: inline-block;
-		padding: 0 1em 0 0;
-     
- 
-		  }
-
-
-/* Lado izquiedo- Version Mobile */
-
-@media screen and (max-device-width : 768px) {
-.izquierdo {
-    height:50%;
-    position: relative;
-}
-
-
-}
-
-
-
-
-/*Lado Derecho*/
-#main{
-    margin-top: 100px;
-}
-
-
-.derecho {
-    background-color:whitesmoke;
-    position:absolute;
-    margin-left: 480px;
-    max-width: calc(100% - 4em)
-
-}
-/* Nav */
-
 #nav{
-    position: fixed;
-    width: 100%;
+    position:sticky;
 }
-.nav-link{
-    justify-items: end;
+ #nav ul {
+    margin-left: 260px;
+ }
+.nav-item{
+    padding-left: 150px;
+    color:#504C5B ;
     font-size: 20px;
 }
-
-#nav ul {
-    margin-left: 260px;
-    padding:10px 20px 10px 0px;
+.banner{
+    background-image: url("img/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:600px;
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+   
 }
-
-
-
-
-.intro h2 {
-    margin-bottom: 20px;
-    color: #381944;
-    font-family: 'Shadows Into Light', cursive;
+.prest{
+    padding: 200px 0px 150px 0px; 
+}
+.prest h1{
+    font-family: 'Rock Salt', cursive;
     font-weight: bold;
+    font-size: 80px;   
 }
-#one p {
-    text-align: justify;
-    line-height: 1.5em;
-    color: #655566;
+.prest h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    padding-top: 10px;
 }
 
-#two {
-    margin: 60px 0px 20px 0px;
+@media screen and (max-device-width : 768px) {
+    .banner{
+        height: 300px;
+    }
+    .prest{
+        padding: 100px 0px 150px 0px; 
+    }
+    .prest h1{
+        font-size: 30px;   
+    }
+    .prest h3 {
+        font-size: 17px;
+    }
 }
+
+/* Main */
+#main{
+    background-color: whitesmoke;
+}
+#main > section {
+    border-top: solid 2px #efefef;
+    margin: 0em 0 0 0;
+    padding: 4em 4em 0 2em;
+}
+
+    #main > section:first-child {
+        border-top: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+/* One */
+    #one h2 {
+        padding: 60px 0px 30px 0px;
+        color: #381944;
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    #one p {
+        text-align: justify;
+        line-height: 2em;
+        color: #655566;
+        font-size: 30px;
+    }
+ @media screen and (max-device-width : 768px) { 
+    #one h2 {
+        font-size: 30px;
+    }
+    #one p {
+        font-size: 15px;
+    }
+ }
+/* Two */
 #two h2{
     color: #381944;
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
+    font-size: 60px;
+    padding-bottom: 30px;
 }
 
 #two p {
     text-align: justify;
     line-height: 1.5em;
     color: #655566;
+    font-size: 30px;
 }
 
-/* Lado Derecho- Version Mobile */
+#two .card-title{
+    font-size: 25px;
+    color: #381944;
+    font-weight: bold;
+}
+#two .img{
+    width: 100%;
+}
+#two .card{
+    padding: 10px;}
 
-@media screen and (max-device-width : 768px) {
-    .derecho{
-        position: sticky;
+    .card1{
+       margin-left: 200px;}
+
+    .card2{
+       margin-left: 400px;}
+    
+    .card3{
+       margin-left: 600px;}
+
+@media screen and (max-device-width : 768px) { 
+    #two h2{
+        font-size: 30px;
+    }
+    
+    #two p {
+        font-size: 15px;
+    }
+    
+    #two .card-title{
+        font-size: 12px;
         
-    } 
-    #main{
-        margin-top: 60px;
-        padding:0 30px 0 30px;}
+    }
+    #two .img{
+        width: 30%;
+    }
+    #two .card{
+        padding: 10px;}
+    
+        .card1{
+           margin-left: 80px;}
+    
+        .card2{
+           margin-left: 80px;}
+        
+        .card3{
+           margin-left: 80px;}
+}
 
+/* Three */
+
+#three h2{
+    color: #381944;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#three h3{
+    color: #381944;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 0px 20px 40px;
+}
+
+#three p {
+    text-align: justify;
+    line-height: 1.5em;
+    color: #655566;
+    font-size: 30px;
 }
