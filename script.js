@@ -76,3 +76,5 @@ document.querySelectorAll('input').forEach(el => el.classList.add ('no-validated
 document.querySelectorAll ('input.email').forEach(el => el.addEventListener('keyup', validateEmail));
 document.querySelectorAll ('input:required').forEach(el => el.addEventListener('keyup', validateNotEmpty));
 
+///// Animacion Redes////
+
