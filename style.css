@@ -190,12 +190,14 @@ footer{
         line-height: 2em;
         color: #655566;
         font-size: 30px;
+        padding: 0px 60px 0px 60px;
     }
     .one-container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
     }
     .foto{
         width: 600px;
@@ -211,6 +213,7 @@ footer{
     }
     #one p {
         font-size: 15px;
+        padding: 0px;
     }
     .foto{
         width: 200px;
@@ -232,6 +235,7 @@ footer{
     line-height: 1.5em;
     color: #655566;
     font-size: 30px;
+    padding: 0px 60px 0px 60px;
 }
 
 #two .card-title{
@@ -262,6 +266,7 @@ footer{
     
     #two p {
         font-size: 15px;
+        padding: 0px;
     }
     
     #two .card-title{
@@ -383,6 +388,13 @@ footer{
 
 }
 
+.boton3 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button {
     background-color: #cec7d1;
     border: none;
@@ -400,7 +412,7 @@ footer{
 }
 
 .button:hover {
-    background-color:#381944;}
+    background-color:#541058;}
 .button a:hover{
     text-decoration: none;
     color: #ada0b3;
@@ -496,6 +508,14 @@ footer{
       .button a{
         font-size: 12px;
     }
+
+    .boton3 {
+        display: flex;
+        padding-left: 5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
     
 }
 
@@ -554,7 +574,31 @@ footer{
     font-size: 60px;
     padding-bottom: 20px;
 }
+#six .boton3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
 
+.buttonUp{
+    border: none;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonUp a{
+    text-decoration: none;
+    color: #381944;
+}
+
+.buttonUp a:hover{
+    text-decoration:slateblue;
+    font-weight: bold;
+    color: #541058;
+}
 
 :root {
     --linkedin:#541058;
@@ -627,7 +671,7 @@ footer{
         height: 50px;
     }
 
-    .boton1 {
+    #six .boton3 {
         display: flex;
         padding-left: 30px;
         align-items: center;
@@ -636,14 +680,5 @@ footer{
     }
 
 }
-
-
-
-
-/* PORFOLIO - ENG */
-
-
-
-/* RESUMEN - ENG */
 
 
