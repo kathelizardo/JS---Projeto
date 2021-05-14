@@ -32,13 +32,8 @@ html {
     text-decoration: none;
     font-size: 17px;
   }
-
-  a .blank{
-      color: #544c57;
-  }
-  
-  
-  .topnav a:hover {
+ 
+  .topnav .nav-link:hover {
     background-color: #a7a5a8;
     color: #381944;
   }
@@ -49,7 +44,7 @@ html {
     color: white;
   }
   
-  /* Hide the link that should open and close the topnav on small screens */
+
   .topnav .icon {
     display: none;
   }
@@ -165,7 +160,7 @@ html {
         width: 600px;
         height: 500px;
         border-radius: 30px;
-        margin: 20px 400px 20px 600px ;
+        margin: 20px 300px 20px 600px ;
     }
     .foto:hover {filter: opacity(.5);}
 
