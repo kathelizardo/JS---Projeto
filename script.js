@@ -1,3 +1,16 @@
+///// NavBar////
+
+function myFunction() {
+    let x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
+
 ///////VALIDAÇÃO EMAIL/////
 
 function validateEmail(e){
@@ -76,5 +89,4 @@ document.querySelectorAll('input').forEach(el => el.classList.add ('no-validated
 document.querySelectorAll ('input.email').forEach(el => el.addEventListener('keyup', validateEmail));
 document.querySelectorAll ('input:required').forEach(el => el.addEventListener('keyup', validateNotEmpty));
 
-///// Animacion Redes////
 

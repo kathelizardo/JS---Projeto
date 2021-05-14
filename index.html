@@ -12,36 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sacramento&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container-fluid">
-	<nav id= nav class="navbar navbar-expand-lg navbar-light" style="background:whitesmoke; width: 100%;">
-		<div class="container-fluid">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			<a class="navbar-brand titulo" href="index.html">KLizardo</a>
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#SOBRE MIM">SOBRE MIM</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#two">FORMAÇÃO</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#three" >EXPERIÊNCIA</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#four">PROJETOS</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#five">CONTATO</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-
-
+<!-- Banner -->
 	<div class="banner">
 		<div class="prest">
 			<h1>Eng. Katherine Lizardo</h1>
@@ -49,6 +20,18 @@
 			<!-- <img src="img/profile-pic.png" width="15%"></a> -->
 		</div>
 	</div>
+<!-- NavBar -->
+	<div class="topnav" id="myTopnav">
+        <a><i class="fas fa-cookie-bite"></i></a>
+        <a class="nav-link" href="#SOBRE MIM">SOBRE MIM <i class="fas fa-user-alt"></i></a>
+        <a class="nav-link" href="#two">FORMAÇÃO <i class="fas fa-graduation-cap"></i></a>
+        <a class="nav-link" href="#three" >EXPERIÊNCIA <i class="far fa-lightbulb"></i></a>
+		<a class="nav-link" href="#four">PROJETOS <i class="far fa-list-alt"></i></a>
+		<a class="nav-link" href="#five">CONTATO <i class="far fa-comments"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 <!-- Main -->
 <div id="main">
 	<!-- One -->
@@ -246,7 +229,7 @@
 
 </div>
 <footer>
-	<a class="titulo" href="index.html">KLizardo</a>
+	<a class="titulo" href="#nav"></a>
 </footer>
 
 <script src="script.js"></script>

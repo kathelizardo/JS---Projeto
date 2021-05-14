@@ -12,21 +12,77 @@ html {
     box-sizing: border-box;
 }
 
-/* HEADER */
-.titulo{
-    font-family: 'Rock Salt', cursive;
-}
-#nav{
-    position:sticky;
-}
- #nav ul {
-    margin-left: 260px;
- }
-.nav-item{
-    padding-left: 150px;
-    color:#504C5B ;
-    font-size: 20px;
-}
+/* NAV */
+
+
+.topnav {
+    background-color:#544c57;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 400px;
+  }
+  
+ 
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a .blank{
+      color: #544c57;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #a7a5a8;
+    color: #381944;
+  }
+  
+  
+  .topnav a.active {
+    background-color: #947ca0;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+ 
+@media screen and (max-width: 768px) {
+    .topnav{
+        padding-left: 0px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/* BANNER */
+
 .banner{
     background-image: url("img/fondo.png");
     background-position: center center;
@@ -405,6 +461,10 @@ html {
 }
 
 /* Six */
+
+#six{
+    border-bottom: solid 8px #efefef;
+}
 #six h2{
     color: #381944;
     font-family: 'Shadows Into Light', cursive;
@@ -473,9 +533,10 @@ html {
     #six h2{
         font-size: 30px;
     }
-    
-   
-
+    .redes-container ul li{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 
@@ -483,5 +544,28 @@ html {
 /* Footer */
 footer{
 border-top: solid 8px #efefef;
-padding: 2em 2em 4em 2em;
+background-image: url("img/03.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 1em 2em 1em 2em;
+}
+
+footer .titulo{ 
+    font-size:20px;
+    font-weight: bold;
+    color: #19071a;
+    text-decoration: none;
+} 
+
+@media screen and (max-device-width : 768px){
+    footer{
+        padding: 2px 2px 2px 2px;
+    }
+    footer .titulo{ 
+        font-size: 10px;
+        padding-left: 15px;
+        color: #19071a;
+        text-decoration: none;
+    } 
 }
