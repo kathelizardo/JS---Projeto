@@ -13,9 +13,9 @@
 </head>
 <body>
 <!-- Banner -->
-	<div class="banner">
+	<div id= banner class="banner">
 		<div class="prest">
-			<h1>Eng. Katherine Lizardo</h1>
+			<h1 id="tituloBanner">Eng. Katherine Lizardo</h1>
 			<h3>Programming & Engineering</h3>
 
 		</div>
@@ -28,6 +28,7 @@
         <a class="nav-link" href="#three" >EXPERIÊNCIA <i class="far fa-lightbulb"></i></a>
 		<a class="nav-link" href="#four">PROJETOS <i class="far fa-list-alt"></i></a>
 		<a class="nav-link" href="#five">CONTATO <i class="far fa-comments"></i></a>
+		<a class="nav-link" href="#six">REDES SOCIAIS <i class="fas fa-at"></i></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -37,19 +38,21 @@
 	<!-- One -->
 	<section id="one">
 			<h2>Un poco sobre mi.</h2>
-		<p id="SOBRE MIM"> Meu nome é Katherine e sou uma venezuelana adotada pela Bahia e pelo acarajé.</p>
-		<img class="foto" src="img/IMG_20191026_113121657_HDR.jpg">
-		<p> Tenho 29 anos, sou engenheiro químico e trabalho na disciplina de processos, porém nos primeiros anos
-			de trabalho senti uma grande atração pela automação e controle de processos. Embora a minha
-			disciplina se concentre no desenho dos processos que compõem os sistemas, queria ir mais longe ...
-			Queria otimizar esses processos através do desenho de controles inteligentes e foi por isso que decidi
-			me especializar em engenharia de controle e automação de processos.
-		</p>  
-		<p> Ao fazer meu projeto final de mestrado, percebi que gostava muito da parte de programar e gerar as
-			interfaces entre processos e operadores (IHM), e esse foi meu primeiro passo na programação.
-			Três anos depois, decidi me focar mesmo em começar no mundo da programação e aqui estou eu,
-			aprendendo uma nova <em style="color: #44154B; font-family: 'Shadows Into Light';">"arte"</em>.
-		 </p>
+			<p id="SOBRE MIM"> Meu nome é Katherine e sou uma venezuelana adotada pela Bahia e pelo acarajé.</p>
+		<div class="one-container">
+			<img class="foto" src="img/IMG_20191026_113121657_HDR.jpg">
+			<p> Tenho 29 anos, sou engenheiro químico e trabalho na disciplina de processos, porém nos primeiros anos
+				de trabalho senti uma grande atração pela automação e controle de processos. Embora a minha
+				disciplina se concentre no desenho dos processos que compõem os sistemas, queria ir mais longe...
+				Queria otimizar esses processos através do desenho de controles inteligentes e foi por isso que decidi
+				me especializar em engenharia de controle e automação de processos.
+			</p>  
+			<p> Ao fazer meu projeto final de mestrado, percebi que gostava muito da parte de programar e gerar as
+				interfaces entre processos e operadores (IHM), e esse foi meu primeiro passo na programação.
+				Três anos depois, decidi me focar mesmo em começar no mundo da programação e aqui estou eu,
+				aprendendo uma nova <em style="color: #44154B; font-family: 'Shadows Into Light';">"arte"</em>.
+			</p>
+		</div>
 		 
 	</section>
 	<!-- Two -->
@@ -144,8 +147,8 @@
 				<p> ● HTML + CSS ● </p>
 			</article>
 		</div>
-		<div class="d-grid gap-2 col-1 mx-auto">
-			<a href="portfolio.html" target="_blank" rel="noopener" class="mt-4 btn btn-primary boton1" type="button">Full Portfolio</a>
+		<div class="boton1">
+			<button class="button"><a href="portfolio.html" target="_blank" rel="noopener">Full Portfolio</a></button>
 		</div>
 
 		<div class="row">
@@ -175,8 +178,8 @@
 			</div>		
 		</div>
 
-		<div class="d-grid gap-2 col-1 mx-auto">
-			<a href="Resume.html" target="_blank" rel="noopener" class="mt-4 btn btn-primary boton1" type="button">Full Resume</a>
+		<div class="boton1">
+			<button class="button"><a href="Resume.html" target="_blank" rel="noopener">Full Resume</a></button>
 		</div>
 	</section>
 	<!-- Five -->
@@ -203,8 +206,8 @@
 								<input type="text" name="assunto" class="form-control" placeholder="Digite o assunto" required>
 						</div>
 	
-							<div class="d-grid gap-2 col-1 mx-auto">
-								<button type="submit" class= "mt-4 btn btn-primary boton2" disabled>Registrar</button>
+							<div class="boton2">
+								<button class="button" type="submit" disabled>Registrar</button>
 							</div>
 					</form>
 				</div>	
@@ -222,9 +225,12 @@
 				</ul>
 			</div> 
     	</div> 
+		<div class="boton1">
+			<button class="button"><a href="#banner">Back to the Top <i class="fas fa-arrow-circle-up"></i></a></button>
+		</div>
 	</section>
 	
-
+	
 
 
 </div>

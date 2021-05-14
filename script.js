@@ -1,3 +1,24 @@
+//////ANIMAÇÃO TITULO////
+let titulo1 = "Eng. Katherine Lizardo";
+let msgCount = 0;
+let timer1;
+let tituloBanner = document.getElementById("tituloBanner");
+
+function textFunc() {
+   tituloBanner.innerHTML = titulo1.substring(0, msgCount);   
+   if (msgCount == titulo1.length) {
+      // Stop Timer
+      clearInterval(timer1);
+      
+   } else {
+      msgCount++;
+   }
+}
+
+timer1 = setInterval("textFunc()", 60); // Every 150 milliseconds
+
+
+
 ///// NavBar////
 
 function myFunction() {
