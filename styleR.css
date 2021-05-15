@@ -371,9 +371,15 @@ footer{
 
 /* Link */
 .resum{
-    font-size: 12px;
+    font-size: 25px;
     color: #381944;
 }
 .resum a {
     text-decoration: none;
     color: #381944;}
+
+    @media screen and (max-device-width : 768px) {
+        .resum{
+            font-size: 12px;}
+
+     }

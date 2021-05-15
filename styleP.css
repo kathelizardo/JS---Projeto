@@ -137,6 +137,7 @@ footer{
 
 .container-fluid {
     max-width: 1024px;
+    padding-bottom: 60px;
   }
 
   .titulo{
@@ -175,6 +176,9 @@ footer{
     }
     .ttabla {
       font-size: 15px;}
+    }
+    .table{
+        max-width: 50%;
     }
 
  
