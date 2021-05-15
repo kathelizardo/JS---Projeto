@@ -69,11 +69,10 @@ request.onload = function () {
   $('tbody').html(statusHTML);
   
   
-
   
 
-// }
-// request.send();
+}
+request.send();
 
 
 
